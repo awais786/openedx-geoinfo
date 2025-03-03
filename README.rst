@@ -1,4 +1,4 @@
-repo_name
+geoinfo
 #########
 
 .. note::
@@ -37,7 +37,7 @@ commands? Is there a larger how-to that should be linked here?
 
 PLACEHOLDER: For details on how to deploy this component, see the `deployment how-to`_.
 
-.. _deployment how-to: https://docs.openedx.org/projects/repo_name/how-tos/how-to-deploy-this-component.html
+.. _deployment how-to: https://docs.openedx.org/projects/geoinfo/how-tos/how-to-deploy-this-component.html
 
 Getting Help
 ************
@@ -47,7 +47,7 @@ Documentation
 
 PLACEHOLDER: Start by going through `the documentation`_.  If you need more help see below.
 
-.. _the documentation: https://docs.openedx.org/projects/repo_name
+.. _the documentation: https://docs.openedx.org/projects/geoinfo
 
 (TODO: `Set up documentation <https://openedx.atlassian.net/wiki/spaces/DOC/pages/21627535/Publish+Documentation+on+Read+the+Docs>`_)
 
@@ -65,7 +65,7 @@ For anything non-trivial, the best path is to open an issue in this
 repository with as many details about the issue you are facing as you
 can provide.
 
-https://github.com/openedx/repo_name/issues
+https://github.com/openedx/geoinfo/issues
 
 For more information about these options, see the `Getting Help <https://openedx.org/getting-help>`__ page.
 
@@ -107,35 +107,35 @@ The assigned maintainers for this component and other project details may be
 found in `Backstage`_. Backstage pulls this data from the ``catalog-info.yaml``
 file in this repo.
 
-.. _Backstage: https://backstage.openedx.org/catalog/default/component/repo_name
+.. _Backstage: https://backstage.openedx.org/catalog/default/component/geoinfo
 
 Reporting Security Issues
 *************************
 
 Please do not report security issues in public. Please email security@openedx.org.
 
-.. |pypi-badge| image:: https://img.shields.io/pypi/v/repo_name.svg
-    :target: https://pypi.python.org/pypi/repo_name/
+.. |pypi-badge| image:: https://img.shields.io/pypi/v/geoinfo.svg
+    :target: https://pypi.python.org/pypi/geoinfo/
     :alt: PyPI
 
-.. |ci-badge| image:: https://github.com/openedx/repo_name/workflows/Python%20CI/badge.svg?branch=main
-    :target: https://github.com/openedx/repo_name/actions
+.. |ci-badge| image:: https://github.com/openedx/geoinfo/workflows/Python%20CI/badge.svg?branch=main
+    :target: https://github.com/openedx/geoinfo/actions
     :alt: CI
 
-.. |codecov-badge| image:: https://codecov.io/github/openedx/repo_name/coverage.svg?branch=main
-    :target: https://codecov.io/github/openedx/repo_name?branch=main
+.. |codecov-badge| image:: https://codecov.io/github/openedx/geoinfo/coverage.svg?branch=main
+    :target: https://codecov.io/github/openedx/geoinfo?branch=main
     :alt: Codecov
 
-.. |doc-badge| image:: https://readthedocs.org/projects/repo_name/badge/?version=latest
-    :target: https://docs.openedx.org/projects/repo_name
+.. |doc-badge| image:: https://readthedocs.org/projects/geoinfo/badge/?version=latest
+    :target: https://docs.openedx.org/projects/geoinfo
     :alt: Documentation
 
-.. |pyversions-badge| image:: https://img.shields.io/pypi/pyversions/repo_name.svg
-    :target: https://pypi.python.org/pypi/repo_name/
+.. |pyversions-badge| image:: https://img.shields.io/pypi/pyversions/geoinfo.svg
+    :target: https://pypi.python.org/pypi/geoinfo/
     :alt: Supported Python versions
 
-.. |license-badge| image:: https://img.shields.io/github/license/openedx/repo_name.svg
-    :target: https://github.com/openedx/repo_name/blob/main/LICENSE.txt
+.. |license-badge| image:: https://img.shields.io/github/license/openedx/geoinfo.svg
+    :target: https://github.com/openedx/geoinfo/blob/main/LICENSE.txt
     :alt: License
 
 .. TODO: Choose one of the statuses below and remove the other status-badge lines.

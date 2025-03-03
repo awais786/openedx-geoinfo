@@ -1,14 +1,18 @@
-"""Unit tests checking method directly for the given ip"""
+"""
+Unit tests checking method directly for the given ip.
+"""
 
+from ddt import data, ddt, unpack
 from django.test import TestCase
-from ddt import ddt, data, unpack
 
 from geoinfo.api import country_code_from_ip
 
 
 @ddt
 class GeoIPTest(TestCase):
-
+    """
+    Test verifying the given ips.
+    """
     @data(
         ("8.8.8.8", "US"),
         ("116.58.86.0", "PK")

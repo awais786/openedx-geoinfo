@@ -39,7 +39,7 @@ def get_version(*file_paths):
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(REPO_ROOT)
 
-VERSION = get_version('../geoinfo/geoinfo', '__init__.py')
+VERSION = get_version('../geoinfo', '__init__.py')
 # Configure Django for autodoc usage
 os.environ['DJANGO_SETTINGS_MODULE'] = 'test_settings'
 django_setup()

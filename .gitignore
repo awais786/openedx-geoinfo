@@ -57,8 +57,8 @@ output/*/index.html
 # Sphinx
 docs/_build
 docs/modules.rst
-docs/repo_name.rst
-docs/repo_name.*.rst
+docs/geoinfo.rst
+docs/geoinfo.*.rst
 
 # Private requirements
 requirements/private.in

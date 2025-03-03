@@ -21,8 +21,7 @@ def country_code_from_ip(ip_addr: str) -> str:
     reader = geoip2.database.Reader(settings.GEOIP_PATH)
     try:
         response = reader.country(ip_addr)
-        # pylint: disable=no-member
-        country_code = response.country.iso_code or ""
+        country_code = response.country.iso_code or ""       # pylint: disable=no-member
     except geoip2.errors.AddressNotFoundError:
         country_code = ""
     reader.close()
