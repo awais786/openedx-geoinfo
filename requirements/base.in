@@ -1,4 +1,6 @@
 # Core requirements for using this application
 -c constraints.txt
 
-Django         # Web application framework
+Django             # Web application framework
+geoip2
+django-ipware

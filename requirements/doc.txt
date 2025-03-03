@@ -6,17 +6,28 @@
 #
 accessible-pygments==0.0.5
     # via pydata-sphinx-theme
+aiohappyeyeballs==2.4.6
+    # via
+    #   -r requirements/test.txt
+    #   aiohttp
+aiohttp==3.11.13
+    # via
+    #   -r requirements/test.txt
+    #   geoip2
+aiosignal==1.3.2
+    # via
+    #   -r requirements/test.txt
+    #   aiohttp
 alabaster==1.0.0
     # via sphinx
 asgiref==3.8.1
     # via
     #   -r requirements/test.txt
     #   django
-astroid==3.3.8
+attrs==25.1.0
     # via
     #   -r requirements/test.txt
-    #   pylint
-    #   pylint-celery
+    #   aiohttp
 babel==2.17.0
     # via
     #   pydata-sphinx-theme
@@ -27,53 +38,29 @@ beautifulsoup4==4.13.3
     # via pydata-sphinx-theme
 build==1.2.2.post1
     # via -r requirements/doc.in
-cachetools==5.5.2
-    # via
-    #   -r requirements/test.txt
-    #   tox
 certifi==2025.1.31
-    # via requests
-chardet==5.2.0
     # via
     #   -r requirements/test.txt
-    #   tox
+    #   requests
 charset-normalizer==3.4.1
-    # via requests
+    # via
+    #   -r requirements/test.txt
+    #   requests
 click==8.1.8
     # via
     #   -r requirements/test.txt
-    #   click-log
     #   code-annotations
-    #   edx-lint
-click-log==0.4.0
-    # via
-    #   -r requirements/test.txt
-    #   edx-lint
 code-annotations==2.2.0
-    # via
-    #   -r requirements/test.txt
-    #   edx-lint
-colorama==0.4.6
-    # via
-    #   -r requirements/test.txt
-    #   tox
+    # via -r requirements/test.txt
 coverage[toml]==7.6.12
     # via
     #   -r requirements/test.txt
     #   pytest-cov
-dill==0.3.9
-    # via
-    #   -r requirements/test.txt
-    #   pylint
-distlib==0.3.9
-    # via
-    #   -r requirements/test.txt
-    #   virtualenv
 django==4.2.19
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
-django-dynamic-fixture==4.0.1
+django-ipware==7.0.1
     # via -r requirements/test.txt
 doc8==1.1.2
     # via -r requirements/doc.in
@@ -84,17 +71,20 @@ docutils==0.21.2
     #   readme-renderer
     #   restructuredtext-lint
     #   sphinx
-edx-lint==5.6.0
-    # via -r requirements/test.txt
-filelock==3.17.0
+frozenlist==1.5.0
     # via
     #   -r requirements/test.txt
-    #   tox
-    #   virtualenv
+    #   aiohttp
+    #   aiosignal
+geoip2==5.0.1
+    # via -r requirements/test.txt
 id==1.5.0
     # via twine
 idna==3.10
-    # via requests
+    # via
+    #   -r requirements/test.txt
+    #   requests
+    #   yarl
 imagesize==1.4.1
     # via sphinx
 importlib-metadata==8.6.1
@@ -103,10 +93,6 @@ iniconfig==2.0.0
     # via
     #   -r requirements/test.txt
     #   pytest
-isort==6.0.1
-    # via
-    #   -r requirements/test.txt
-    #   pylint
 jaraco-classes==3.4.0
     # via keyring
 jaraco-context==6.0.1
@@ -126,16 +112,21 @@ markupsafe==3.0.2
     # via
     #   -r requirements/test.txt
     #   jinja2
-mccabe==0.7.0
+maxminddb==2.6.3
     # via
     #   -r requirements/test.txt
-    #   pylint
+    #   geoip2
 mdurl==0.1.2
     # via markdown-it-py
 more-itertools==10.6.0
     # via
     #   jaraco-classes
     #   jaraco-functools
+multidict==6.1.0
+    # via
+    #   -r requirements/test.txt
+    #   aiohttp
+    #   yarl
 nh3==0.2.21
     # via readme-renderer
 packaging==24.2
@@ -143,26 +134,22 @@ packaging==24.2
     #   -r requirements/test.txt
     #   build
     #   pydata-sphinx-theme
-    #   pyproject-api
     #   pytest
     #   sphinx
-    #   tox
     #   twine
 pbr==6.1.1
     # via
     #   -r requirements/test.txt
     #   stevedore
-platformdirs==4.3.6
-    # via
-    #   -r requirements/test.txt
-    #   pylint
-    #   tox
-    #   virtualenv
 pluggy==1.5.0
     # via
     #   -r requirements/test.txt
     #   pytest
-    #   tox
+propcache==0.3.0
+    # via
+    #   -r requirements/test.txt
+    #   aiohttp
+    #   yarl
 pydata-sphinx-theme==0.15.4
     # via sphinx-book-theme
 pygments==2.19.1
@@ -173,30 +160,6 @@ pygments==2.19.1
     #   readme-renderer
     #   rich
     #   sphinx
-pylint==3.3.4
-    # via
-    #   -r requirements/test.txt
-    #   edx-lint
-    #   pylint-celery
-    #   pylint-django
-    #   pylint-plugin-utils
-pylint-celery==0.3
-    # via
-    #   -r requirements/test.txt
-    #   edx-lint
-pylint-django==2.6.1
-    # via
-    #   -r requirements/test.txt
-    #   edx-lint
-pylint-plugin-utils==0.8.2
-    # via
-    #   -r requirements/test.txt
-    #   pylint-celery
-    #   pylint-django
-pyproject-api==1.9.0
-    # via
-    #   -r requirements/test.txt
-    #   tox
 pyproject-hooks==1.2.0
     # via build
 pytest==8.3.4
@@ -208,6 +171,10 @@ pytest-cov==6.0.0
     # via -r requirements/test.txt
 pytest-django==4.10.0
     # via -r requirements/test.txt
+python-ipware==3.0.0
+    # via
+    #   -r requirements/test.txt
+    #   django-ipware
 python-slugify==8.0.4
     # via
     #   -r requirements/test.txt
@@ -220,6 +187,8 @@ readme-renderer==44.0
     # via twine
 requests==2.32.3
     # via
+    #   -r requirements/test.txt
+    #   geoip2
     #   id
     #   requests-toolbelt
     #   sphinx
@@ -234,10 +203,6 @@ rich==13.9.4
     # via twine
 roman-numerals-py==3.1.0
     # via sphinx
-six==1.17.0
-    # via
-    #   -r requirements/test.txt
-    #   edx-lint
 snowballstemmer==2.2.0
     # via sphinx
 soupsieve==2.6
@@ -274,12 +239,6 @@ text-unidecode==1.3
     # via
     #   -r requirements/test.txt
     #   python-slugify
-tomlkit==0.13.2
-    # via
-    #   -r requirements/test.txt
-    #   pylint
-tox==4.24.1
-    # via -r requirements/test.txt
 twine==6.1.0
     # via -r requirements/doc.in
 typing-extensions==4.12.2
@@ -289,12 +248,13 @@ typing-extensions==4.12.2
 urllib3==2.2.3
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+    #   -r requirements/test.txt
     #   requests
     #   twine
-virtualenv==20.29.2
+yarl==1.18.3
     # via
     #   -r requirements/test.txt
-    #   tox
+    #   aiohttp
 zipp==3.21.0
     # via importlib-metadata
 
