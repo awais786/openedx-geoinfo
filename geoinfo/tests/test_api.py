@@ -1,7 +1,7 @@
-import geoip2.database
+"""Unit tests checking method directly for the given ip"""
+
 from django.test import TestCase
 from ddt import ddt, data, unpack
-from django.conf import settings
 
 from geoinfo.api import country_code_from_ip
 
