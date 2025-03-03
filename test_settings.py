@@ -11,7 +11,6 @@ here = lambda *x: join(abspath(dirname(__file__)), *x)
 PROJECT_ROOT = here('..')
 root = lambda *x: abspath(join(abspath(PROJECT_ROOT), *x))
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -36,7 +35,6 @@ LOCALE_PATHS = [
     root('geoinfo', 'conf', 'locale'),
 ]
 
-
 SECRET_KEY = 'insecure-secret-key'
 
 MIDDLEWARE = (
@@ -56,5 +54,4 @@ TEMPLATES = [{
     },
 }]
 
-
-GEOIP_PATH = root("static","data","geoip", "GeoLite2-Country.mmdb")
+GEOIP_PATH = here("static", "data", "geoip", "GeoLite2-Country.mmdb")

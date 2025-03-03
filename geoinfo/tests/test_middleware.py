@@ -12,7 +12,7 @@ from django.test import TestCase
 from django.test.client import RequestFactory
 
 from geoinfo.middleware import CountryMiddleware
-from tests.factories import AnonymousUserFactory, UserFactory
+from geoinfo.tests.factories import AnonymousUserFactory, UserFactory
 
 
 class CountryMiddlewareTests(TestCase):
