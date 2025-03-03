@@ -7,12 +7,9 @@ Django applications, so these settings will not be used.
 
 from os.path import abspath, dirname, join
 
-
-def root(*args):
-    """
-    Get the absolute path of the given path relative to the project root.
-    """
-    return join(abspath(dirname(__file__)), *args)
+here = lambda *x: join(abspath(dirname(__file__)), *x)
+PROJECT_ROOT = here('..')
+root = lambda *x: abspath(join(abspath(PROJECT_ROOT), *x))
 
 
 DATABASES = {
@@ -58,3 +55,6 @@ TEMPLATES = [{
         ],
     },
 }]
+
+
+GEOIP_PATH = root("static","data","geoip", "GeoLite2-Country.mmdb")

@@ -91,10 +91,16 @@ django==4.2.19
     #   edx-i18n-tools
 django-ipware==7.0.1
     # via -r requirements/quality.txt
-edx-i18n-tools==1.6.3
+edx-i18n-tools==1.6.1
     # via -r requirements/dev.in
 edx-lint==5.6.0
     # via -r requirements/quality.txt
+factory-boy==3.3.3
+    # via -r requirements/quality.txt
+faker==36.1.1
+    # via
+    #   -r requirements/quality.txt
+    #   factory-boy
 filelock==3.17.0
     # via
     #   -r requirements/ci.txt
@@ -157,8 +163,10 @@ packaging==24.2
     #   pyproject-api
     #   pytest
     #   tox
-path==16.16.0
-    # via edx-i18n-tools
+path==17.1.0
+    # via
+    #   -r requirements/quality.txt
+    #   edx-i18n-tools
 pbr==6.1.1
     # via
     #   -r requirements/quality.txt
@@ -221,7 +229,7 @@ pyproject-hooks==1.2.0
     #   -r requirements/pip-tools.txt
     #   build
     #   pip-tools
-pytest==8.3.4
+pytest==8.3.5
     # via
     #   -r requirements/quality.txt
     #   pytest-cov
@@ -273,6 +281,10 @@ tomlkit==0.13.2
     #   pylint
 tox==4.24.1
     # via -r requirements/ci.txt
+tzdata==2025.1
+    # via
+    #   -r requirements/quality.txt
+    #   faker
 urllib3==2.2.3
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt

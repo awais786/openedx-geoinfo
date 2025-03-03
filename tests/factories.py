@@ -1,12 +1,13 @@
 """Provides factories for student models."""
 import factory
+
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import AnonymousUser
 
 PASSWORD = 'password'
 
 
-class UserFactory(factory.DjangoModelFactory):
+class UserFactory(factory.django.DjangoModelFactory):
     """ User factory. """
     username = email = factory.Sequence(lambda n: f'user{n}')
     email = factory.Sequence(lambda n: f'user{n}@example.com')
