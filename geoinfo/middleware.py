@@ -12,7 +12,7 @@ decorator `django.utils.decorators.decorator_from_middleware(middleware_class)`
 import logging
 
 from django.utils.deprecation import MiddlewareMixin
-from python_ipware import IpWare
+from python_ipware import IpWare    # pylint: disable=import-error
 
 from .api import country_code_from_ip
 
@@ -31,6 +31,7 @@ class CountryMiddleware(MiddlewareMixin):
         """
         ipw = IpWare()
         new_ip_address_obj, _ = ipw.get_client_ip(meta=request.META)
+        new_ip_address = None
 
         if new_ip_address_obj:
             new_ip_address = format(new_ip_address_obj)

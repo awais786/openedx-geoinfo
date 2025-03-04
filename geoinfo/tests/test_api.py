@@ -2,7 +2,7 @@
 Unit tests checking method directly for the given ip.
 """
 
-from ddt import data, ddt, unpack
+from ddt import data, ddt, unpack   # pylint: disable=import-error
 from django.test import TestCase
 
 from geoinfo.api import country_code_from_ip

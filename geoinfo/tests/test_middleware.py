@@ -5,8 +5,8 @@ Tests for CountryMiddleware.
 
 from unittest.mock import MagicMock, PropertyMock, patch
 
-import geoip2
-import maxminddb
+import geoip2   # pylint: disable=import-error
+import maxminddb    # pylint: disable=import-error
 from django.contrib.sessions.middleware import SessionMiddleware
 from django.test import TestCase
 from django.test.client import RequestFactory

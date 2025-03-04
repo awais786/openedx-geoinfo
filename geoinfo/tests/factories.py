@@ -1,5 +1,5 @@
 """Provides factories for student models."""
-import factory
+import factory  # pylint: disable=import-error
 
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import AnonymousUser
